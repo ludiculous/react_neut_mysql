@@ -1,0 +1,31 @@
+{
+  "name": "d3-exp",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "express": "~4.16.0",
+    "http-errors": "~1.6.2",
+    "jade": "~1.11.0",
+    "knex": "^0.15.2",
+    "morgan": "~1.9.0",
+    "mysql": "^2.16.0",
+    "node-sass": "^4.9.3",
+    "react-redux": "^5.0.7",
+    "react-router-dom": "^4.3.1",
+    "react-router-redux": "^4.0.8",
+    "redux": "^4.0.0",
+    "redux-thunk": "^2.3.0",
+    "sass-loader": "^7.1.0",
+    "semantic-ui-react": "^0.82.5"
+  },
+  "devDependencies": {
+    "@neutrinojs/react": "^8.3.0",
+    "neutrino": "^8.3.0"
+  }
+}

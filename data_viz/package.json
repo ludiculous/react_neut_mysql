@@ -1,0 +1,38 @@
+{
+  "name": "data_viz",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "neutrino build",
+    "start": "neutrino start",
+    "lint": "neutrino lint",
+    "test": "neutrino test"
+  },
+  "dependencies": {
+    "@neutrinojs/airbnb": "^8.3.0",
+    "@neutrinojs/jest": "^8.3.0",
+    "@neutrinojs/react": "^8.3.0",
+    "@neutrinojs/style-loader": "^8.3.0",
+    "d3": "^5.5.0",
+    "history": "^4.7.2",
+    "lodash": "^4.17.10",
+    "lodash.debounce": "^4.0.8",
+    "postcss-loader": "^3.0.0",
+    "prop-types": "^15.6.2",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "react-hot-loader": "^4.3.11",
+    "react-redux": "^5.0.7",
+    "react-router-dom": "^4.3.1",
+    "react-router-redux": "^4.0.8",
+    "redux": "^4.0.0",
+    "redux-thunk": "^2.3.0",
+    "sass-loader": "^7.1.0",
+    "semantic-ui-css": "^2.4.0"
+  },
+  "devDependencies": {
+    "neutrino-middleware-sass": "0.0.1",
+    "neutrino-middleware-style-loader": "^7.4.0"
+  }
+}
