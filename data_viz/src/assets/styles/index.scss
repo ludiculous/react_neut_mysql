@@ -1,7 +1,26 @@
+html {
+
+}
+
 body {
   background: white;
+  padding: 30px;
 }
 
 .userform {
   padding: 30px 60px;
+}
+
+.state-borders {
+  fill: #ccc;
+  stroke: white;
+}
+
+.states :hover{
+  fill: 'red';
+}
+
+.state_labels {
+  color: white;
+  fill: white;
 }

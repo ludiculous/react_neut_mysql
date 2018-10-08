@@ -1,7 +1,8 @@
 module.exports = {
   use: [
     //'@neutrinojs/airbnb',
-    
+    //'@neutrinojs/node',
+    '@neutrinojs/jest',
     [
       '@neutrinojs/react',
       {
@@ -32,7 +33,6 @@ module.exports = {
           }
         }
       ]}
-    ],
-    '@neutrinojs/jest'
+    ]
   ]
 };

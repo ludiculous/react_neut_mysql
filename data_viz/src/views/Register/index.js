@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Button, Checkbox, Form } from 'semantic-ui-react'
 import { connect } from 'react-redux'
-import {submitForm} from '../../actions/'
+import {submitForm, getUser} from '../../actions/'
 
 class Register extends Component {
   constructor(props){
@@ -11,6 +11,12 @@ class Register extends Component {
       password: '',
       user_error: false
     }
+  }
+
+  async componentDidMount() {
+    const id = 0;
+    const user_data = await this.props.getUser(0);
+    console.log(user_data)
   }
   
   handleChange(e) {
@@ -44,7 +50,7 @@ class Register extends Component {
       this.setState({
         user_error: false
       })
-      this.props.submitForm
+      this.props.submitForm(userData);
     } else {
       this.setState({
         user_error: true
@@ -78,4 +84,4 @@ const mapStateToProps = state =>({
   browser: state.browser
 });
 
-export default connect(mapStateToProps, {submitForm})(Register);
+export default connect(mapStateToProps, {submitForm, getUser})(Register);

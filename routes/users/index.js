@@ -3,11 +3,18 @@ var router = express.Router();
 
 var store = require('./store.js');
 /* GET users listing. */
-router.get('/', function(req, res, next) {
-  res.send('respond with a resource');
+router.get('/:id', function(req, res, next) {
+  var userID = req.params.id;
+  res.send('respond with a resource' + userID);
+});
+
+router.get('/test', function(req, res, next) {
+  var userID = req.params.id;
+  res.send('respond with a resource' + userID);
 });
 
 router.post('/create', function(req, res){
+  console.log(req.body)
   store
     .createUser({
         username: req.body.username,

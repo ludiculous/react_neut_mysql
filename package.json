@@ -8,8 +8,10 @@
   "dependencies": {
     "axios": "^0.18.0",
     "cookie-parser": "~1.4.3",
+    "cors": "^2.8.4",
     "debug": "~2.6.9",
     "express": "~4.16.0",
+    "forex-quotes": "^2.0.10",
     "http-errors": "~1.6.2",
     "jade": "~1.11.0",
     "knex": "^0.15.2",
